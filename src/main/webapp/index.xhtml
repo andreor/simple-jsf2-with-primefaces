@@ -1,0 +1,23 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+    Keyboard Demo
+</h:head>
+
+<h:body>
+
+    <h:form>
+        <p:panel header="Keyboard Demo">
+            <p:keyboard value="#{helloWorldManagedBean.value}"/>
+        </p:panel>
+        <p:commandButton value="Submit" update="label"/>
+        <br/>
+        <h:outputText id="label" value="#{helloWorldManagedBean.value}"/>
+    </h:form>
+
+
+</h:body>
+</html>
